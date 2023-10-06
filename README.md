@@ -1,1 +1,1 @@
-# Resources for NUS SDS ML Deployment Workshop
+# NUS SDS ML Deployment Workshop
