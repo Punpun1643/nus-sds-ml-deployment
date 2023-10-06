@@ -36,3 +36,41 @@
     - Run `docker --version` to check the installed version.
 
     - Run `docker run hello-world` to ensure Docker can pull and run images.
+
+#### Installing Docker on Windows
+
+1. Prerequisites:
+    - Windows 10 64-bit: Pro, Enterprise, or Education (Build 16299 or later). For Windows 10 Home, ensure you're updated to at least version 2004 and follow additional steps during setup.
+
+    - Hyper-V and Containers Windows features must be enabled. Docker will enable these for you, but if you're using a virtual machine, ensure that it's configured for virtualization.
+
+2. Download Docker Desktop for Windows:
+    - Go to the official Docker website: [Docker Hub](https://hub.docker.com/)
+
+    - Navigate to "Get Docker" or "Docker Desktop".
+
+    - Download the Docker Desktop for Windows installer.
+
+3. Install Docker:
+    - Locate the downloaded .exe file and double-click to run the installer.
+
+    - Follow the installation wizard instructions. It may require a restart.
+
+4. Run Docker:
+    - Once installed, launch Docker from the Start menu or desktop icon.
+
+    - Docker will start as a tray application.
+
+    - The first time you start Docker, it might take some time to initialize and enable required features.
+
+5. Verify Installation:
+    - Open Command Prompt or PowerShell.
+
+    - Run `docker --version` to check the installed version.
+
+    - Run `docker run hello-world` to ensure Docker can pull and run images.
+
+(Windows 10 Home Users Only):
+- Install the WSL 2 Linux kernel update package.
+
+- Set WSL 2 as your default version with `wsl --set-default-version 2`.
