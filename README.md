@@ -1,5 +1,15 @@
 # NUS SDS ML Deployment Workshop
 
+## Table of content
+
+- [Prerequisite](#prerequisite)
+    - [Install Docker](#install-docker)
+        - [MacOS](#installing-docker-on-macos)
+        - [Windows](#installing-docker-on-windows)
+- [Docker: running docker image as container](#docker)
+    - [Build Docker image](#build-docker-images)
+    - [Run image as container](#running-image-as-a-container)
+
 ## Prerequisite
 
 ### Install Docker
@@ -74,3 +84,43 @@
 - Install the WSL 2 Linux kernel update package.
 
 - Set WSL 2 as your default version with `wsl --set-default-version 2`.
+
+## Docker
+
+### Build Docker images
+
+To build docker image from `Dockerfile` run the following command in the directory with the `Dockerfile`:
+
+```
+docker build -t your_image_name:tag .
+```
+
+- `t` allows you to tag your image with a name (and optionally a version).
+
+- `.` at the end specifies the current directory as the context.
+
+Example:
+
+```
+docker build -t punpun1643/resume-model-v2 .   
+```
+
+This builds a Docker image from Dockerfile with the image name `punpun1643/resume-model-v2` and the default `latest` image tag 
+
+### Running image as a container
+
+To run the docker image from the previous step as container, run the following command: 
+
+```
+docker run [OPTIONS] IMAGE[:TAG]
+```
+
+Some common `OPTIONS` include:
+- p: Publish a container's port to the host. Format: `<host_port>:<container_port>`
+
+Example:
+
+```
+docker run -p 8080:80 punpun1643/resume-model-v2
+```
+This runs `punpun1643/resume-model-v2` and maps port `80` in the container to port `8080` on the host.
