@@ -124,3 +124,34 @@ Example:
 docker run -p 8080:80 punpun1643/resume-model-v2
 ```
 This runs `punpun1643/resume-model-v2` and maps port `80` in the container to port `8080` on the host.
+
+### Pushing & Pulling Images
+
+To push a created docker image to DockerHub, run the following command: 
+
+```
+docker push [OPTIONS] IMAGE[:TAG]
+```
+
+Example:
+
+```
+docker push punpun1643/resume-model-v2
+```
+
+This pushes the repository `punpun1643/resume-model-v2` to DockerHub, making it publicly accessible
+
+
+To pull a docker image from DockerHub, run the following command: 
+
+```
+docker pull [OPTIONS] IMAGE[:TAG]
+```
+
+Example:
+
+```
+docker pull punpun1643/resume-model-v2
+```
+
+This pulls the image from DockerHub and gives useful information to the user
