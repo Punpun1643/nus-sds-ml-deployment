@@ -37,11 +37,6 @@ labels = [
 
 with open(f"{BASE_DIR}/resume_pipeline_{__version__}.pkl", "rb") as f:
     resume_prediction_model = pickle.load(f)
-
-
-def preprocess_text(raw_resume):
-    resume_processed = ' '.join(re.findall('[a-zA-Z0-9]+', raw_resume)).lower()   
-    return resume_processed 
         
     
 def predict_pipeline(text):
