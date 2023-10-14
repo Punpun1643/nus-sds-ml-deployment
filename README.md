@@ -1,8 +1,11 @@
 # NUS SDS ML Deployment Workshop
 
-> Note: `modelDevelopment/Resume_Role_prediction.ipynb` contains the reference to how the model was developed. The data set used could be accessed at `UpdatedResumeDataSet.csv`
-
-> You can alternatively access the read-only version of the notebook [here](https://colab.research.google.com/drive/1UD4CwrGuFIYVA4l1ZvmagU6AzYQt43tU?usp=sharing)
+> 📝 Resources: 
+> - [GitHub repo](https://github.com/Punpun1643/nus-sds-ml-deployment) containing all codes and guides 
+> - `modelDevelopment/Resume_Role_prediction.ipynb` contains the reference to how the model was developed. You can upload this to a notebook to interact with it
+> - Alternatively, you can access the read-only version of the notebook [here](https://colab.research.google.com/drive/1UD4CwrGuFIYVA4l1ZvmagU6AzYQt43tU?usp=sharing)
+> - `UpdatedResumeDataSet.csv` contains the dataset used to train the model
+> - `app/mode/resume_pipeline_0.2.pkl`contains the saved version of the model
 
 ## Table of content
 
