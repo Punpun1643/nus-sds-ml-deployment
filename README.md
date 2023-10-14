@@ -23,6 +23,8 @@
 
 2. Download Docker Desktop for Mac:
     - Go to the official Docker website: [Docker Hub](https://hub.docker.com/)
+  
+    - Sign up for a DockerHub account
 
     - Navigate to "Get Docker" or "Docker Desktop".
 
@@ -56,6 +58,8 @@
 
 2. Download Docker Desktop for Windows:
     - Go to the official Docker website: [Docker Hub](https://hub.docker.com/)
+  
+    - Sign up for a DockerHub account
 
     - Navigate to "Get Docker" or "Docker Desktop".
 
