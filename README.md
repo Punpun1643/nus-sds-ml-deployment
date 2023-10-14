@@ -5,7 +5,7 @@
 > - `modelDevelopment/Resume_Role_prediction.ipynb` contains the reference to how the model was developed. You can upload this to a notebook to interact with it
 > - Alternatively, you can access the read-only version of the notebook [here](https://colab.research.google.com/drive/1UD4CwrGuFIYVA4l1ZvmagU6AzYQt43tU?usp=sharing)
 > - `UpdatedResumeDataSet.csv` contains the dataset used to train the model
-> - `app/mode/resume_pipeline_0.2.pkl`contains the saved version of the model
+> - `app/model/resume_pipeline_0.2.pkl`contains the saved version of the model
 
 ## Table of content
 
