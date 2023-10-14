@@ -16,6 +16,7 @@
 
 <details markdown="block">
 <summary> <b>Install Docker on macOS</b> </summary>
+
 #### Installing Docker on macOS
 
 1. Prerequisites:
@@ -87,6 +88,7 @@ If you don't have a Docker Hub account, create one [here](https://hub.docker.com
 
 <details markdown="block">
 <summary> <b>Install Docker on Windows</b> </summary>
+
 #### Installing Docker on Windows
 
 1. Prerequisites:
