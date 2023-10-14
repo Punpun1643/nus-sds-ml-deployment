@@ -243,7 +243,7 @@ Example:
 docker push punpun1643/resume-model-v2
 ```
 
-This pushes the repository `punpun1643/resume-model-v2` to Docker Hub with the username `punpun1643` and the repository `resume-model-v2`, making it publicly accessible
+This pushes the image to Docker Hub with the username `punpun1643` and the repository `resume-model-v2`, making it publicly accessible
 
 If you push the image successfully, you should be able to see the repository:
 
