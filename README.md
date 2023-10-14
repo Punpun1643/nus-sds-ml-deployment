@@ -6,9 +6,11 @@
     - [Install Docker](#install-docker)
         - [MacOS](#installing-docker-on-macos)
         - [Windows](#installing-docker-on-windows)
-- [Docker: running docker image as container](#docker)
-    - [Build Docker image](#build-docker-images)
-    - [Run image as container](#running-image-as-a-container)
+- [Docker](#docker)
+    - [🏗️ Build Docker image](#build-docker-images)
+    - [📦 Run image as container](#running-image-as-a-container)
+    - [⚙️ Pushing & Pulling Images](#⚙️-pushing--pulling-images)
+    - [🛑 Stop the running container](#🛑-stop-the-running-container)
 
 ## Prerequisite
 
@@ -172,7 +174,7 @@ To build docker image from `Dockerfile` run the following command in the directo
 docker build -t your_image_name:tag .
 ```
 
-- `t` allows you to tag your image with a name (and optionally a version).
+- `-t` allows you to tag your image with a name (and optionally a version).
 
 - `.` at the end specifies the current directory as the context.
 
@@ -202,13 +204,29 @@ docker run -p 8080:80 punpun1643/resume-model-v2
 ```
 This runs `punpun1643/resume-model-v2` and maps port `80` in the container to port `8080` on the host.
 
+### ✅ Verify running containers
+
+To view information of the currently running containers, you can use the following command:
+
+```
+docker ps
+```
+
+If you successfully run the container, you should be able to see:
+
+```
+CONTAINER ID   IMAGE                        COMMAND                  CREATED          STATUS          PORTS                  NAMES
+e8e936d42494   punpun1643/resume-model-v2   "/start.sh"              13 seconds ago   Up 11 seconds   0.0.0.0:8080->80/tcp   unruffled_joliot
+```
+
+You should be able to access the running application at `localhost:8080/docs`
+
+
 ### ⚙️ Pushing & Pulling Images
 
-To push a created docker image to DockerHub, run the following command: 
+To push a created docker image to Docker Hub, run the following command: 
 
-```
-docker push [OPTIONS] IMAGE[:TAG]
-```
+**⚠️ Important:** In order to push the image to your Docker Hub, you need to tag the image with your Docker Hub username and the desired repository name.
 
 Example:
 
@@ -216,7 +234,15 @@ Example:
 docker push punpun1643/resume-model-v2
 ```
 
-This pushes the repository `punpun1643/resume-model-v2` to DockerHub, making it publicly accessible
+This pushes the repository `punpun1643/resume-model-v2` to Docker Hub with the username `punpun1643` and the repository `resume-model-v2`, making it publicly accessible
+
+If you push the image successfully, you should be able to see the repository:
+
+
+
+And the latest image:
+
+
 
 
 To pull a docker image from DockerHub, run the following command: 
@@ -232,3 +258,27 @@ docker pull punpun1643/resume-model-v2
 ```
 
 This pulls the image from DockerHub and gives useful information to the user
+
+### 🛑 Stop the running container 
+
+To stop the running container, do the following:
+
+1. Run `docker ps` to view the running container. Obtain the container ID of the container you want to stop.
+
+Example: in this case, I want to stop the container from the image `punpun1643/resume-model-v2`. The container ID is therefore `e8e936d42494`
+```
+CONTAINER ID   IMAGE                        COMMAND                  CREATED          STATUS          PORTS                  NAMES
+e8e936d42494   punpun1643/resume-model-v2   "/start.sh"              13 seconds ago   Up 11 seconds   0.0.0.0:8080->80/tcp   unruffled_joliot
+```
+
+2. Run the following command to stop the container:
+
+```
+docker stop [container_id]
+```
+
+Example:
+
+```
+docker stop e8e936d42494
+```
