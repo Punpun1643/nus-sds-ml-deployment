@@ -1,5 +1,9 @@
 # NUS SDS ML Deployment Workshop
 
+> Note: `modelDevelopment/Resume_Role_prediction.ipynb` contains the reference to how the model was developed. The data set used could be accessed at `UpdatedResumeDataSet.csv`
+
+> You can alternatively access the read-only version of the notebook [here](https://colab.research.google.com/drive/1UD4CwrGuFIYVA4l1ZvmagU6AzYQt43tU?usp=sharing)
+
 ## Table of content
 
 - [Prerequisite](#prerequisite)
@@ -221,6 +225,8 @@ e8e936d42494   punpun1643/resume-model-v2   "/start.sh"              13 seconds 
 
 You should be able to access the running application at `localhost:8080/docs`
 
+![F52E63AC-41F5-47B8-A463-4F3B3DCA78AE](https://github.com/Punpun1643/nus-sds-ml-deployment/assets/60144099/08c36f3c-450d-4197-95dd-a175fe4fd274)
+
 
 ### ⚙️ Pushing & Pulling Images
 
@@ -238,11 +244,12 @@ This pushes the repository `punpun1643/resume-model-v2` to Docker Hub with the u
 
 If you push the image successfully, you should be able to see the repository:
 
+![56E6CAA1-717C-4428-932B-6E9C026DD201_4_5005_c](https://github.com/Punpun1643/nus-sds-ml-deployment/assets/60144099/eafd65e2-c57e-41a2-9747-b5a750418736)
 
 
 And the latest image:
 
-
+![AB6A5B12-00C6-46F0-9A28-96CEE8A4F00A](https://github.com/Punpun1643/nus-sds-ml-deployment/assets/60144099/5f4240bd-ddcf-4ca4-a6f1-f30bd873f99e)
 
 
 To pull a docker image from DockerHub, run the following command: 
