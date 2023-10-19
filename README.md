@@ -25,16 +25,19 @@
 The workshop contains 3 parts. To follow along with each of the parts, you need to do the following:
 
 ### Part 1: saving model as pickle file
+![B09363C7-D6AB-4AF0-A7B4-6AE89C0D4EB2_1_105_c](https://github.com/Punpun1643/nus-sds-ml-deployment/assets/60144099/1b3a8258-e842-4f54-b846-9e6aaa4b9dae)
 
 Note: remember to upload the `UpdatedResumeDataSet.csv` to your own Google Drive. You will need this dataset to run the notebook and train the model
 
 You should also upload the `Resume_Role_prediction.ipynb` to Google Colab to follow along with the model saving part
 
 However, if there's any difficulties or you don't wish to follow along with the saving portion of the workshop, you could also directly access the pickle file (i.e. the saved version of the model) at `app/model/resume_pipeline_0.2.pkl` 
+![991C3D9A-6080-416F-A50D-3CD4CB525159_1_105_c](https://github.com/Punpun1643/nus-sds-ml-deployment/assets/60144099/ca6becce-9578-4b83-a6e4-053c9139bc35)
 
 ### Part 2: building docker image and running image as container
 
 We will be going through how we can write Dockerfile for our docker image. You could access the written Dockerfile at the root directory of the repo.
+![920AA4B2-0EF8-41FD-830A-86BDADE54497_1_105_c](https://github.com/Punpun1643/nus-sds-ml-deployment/assets/60144099/518e73fa-db19-4c57-bbf8-4c7e7f09c5b4)
 
 
 ## Prerequisite
