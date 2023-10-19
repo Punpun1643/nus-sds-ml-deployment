@@ -8,7 +8,9 @@
 > - `app/model/resume_pipeline_0.2.pkl`contains the saved version of the model
 
 ## Table of content
-- [Guide to uploading files]()
+- [Guide to uploading files](#guide-to-uploading-files)
+    - [Part 1: saving model as pickle file](#part-1-saving-model-as-pickle-file)
+    - [Part 2: building docker image and running image as container](#part-2-building-docker-image-and-running-image-as-container)
 - [Prerequisite](#prerequisite)
     - [Install Docker](#install-docker)
         - [MacOS](#installing-docker-on-macos)
