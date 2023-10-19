@@ -8,7 +8,7 @@
 > - `app/model/resume_pipeline_0.2.pkl`contains the saved version of the model
 
 ## Table of content
-
+- [Guide to uploading files]()
 - [Prerequisite](#prerequisite)
     - [Install Docker](#install-docker)
         - [MacOS](#installing-docker-on-macos)
@@ -18,6 +18,24 @@
     - [📦 Run image as container](#running-image-as-a-container)
     - [⚙️ Pushing & Pulling Images](#⚙️-pushing--pulling-images)
     - [🛑 Stop the running container](#🛑-stop-the-running-container)
+
+
+## Guide to uploading files 
+
+The workshop contains 3 parts. To follow along with each of the parts, you need to do the following:
+
+### Part 1: saving model as pickle file
+
+Note: remember to upload the `UpdatedResumeDataSet.csv` to your own Google Drive. You will need this dataset to run the notebook and train the model
+
+You should also upload the `Resume_Role_prediction.ipynb` to Google Colab to follow along with the model saving part
+
+However, if there's any difficulties or you don't wish to follow along with the saving portion of the workshop, you could also directly access the pickle file (i.e. the saved version of the model) at `app/model/resume_pipeline_0.2.pkl` 
+
+### Part 2: building docker image and running image as container
+
+We will be going through how we can write Dockerfile for our docker image. You could access the written Dockerfile at the root directory of the repo.
+
 
 ## Prerequisite
 
